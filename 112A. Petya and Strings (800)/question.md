@@ -79,30 +79,6 @@ To compare strings ignoring case:
 
 ---
 
-## Sample Code (C++)
-```cpp
-#include <iostream>
-#include <string>
-#include <algorithm>
-using namespace std;
-
-int main() {
-    string s1, s2;
-    cin >> s1 >> s2;
-
-    // Convert to lowercase
-    transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
-    transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
-
-    if (s1 < s2) cout << -1;
-    else if (s1 > s2) cout << 1;
-    else cout << 0;
-    return 0;
-}
-```
-
----
-
 ## Complexity
 - **Time Complexity:** O(n), where n is the string length.
 - **Space Complexity:** O(1), since operations are done in place.
